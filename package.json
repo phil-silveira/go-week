@@ -3,20 +3,18 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/phil-silveira/go-week.git",
+  "author": "Phil <--->",
   "license": "MIT",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.16.4",
-    "mongoose": "^5.3.9"
+    "mongoose": "^5.3.10",
+    "socket.io": "^2.1.1"
   },
   "devDependencies": {
-    "babel": "^6.23.0",
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
     "nodemon": "^1.18.6"
   },
   "scripts": {
-    "build": "babel ./src/index.js -o ./src/bundle.js",
-    "start": "yarn build && nodemon ./src/bundle.js",
-    "serve": "node dist/index.js"
+    "start": "nodemon ./src/index.js"
   }
 }
